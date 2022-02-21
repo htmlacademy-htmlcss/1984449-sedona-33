@@ -14,7 +14,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     line-height: 21px;
@@ -30,11 +38,33 @@ body {
     color: black;
 }
 
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 445px;
+}
+
+.navigation-user {
+    margin: 0;
+    max-width: 300px;
+    margin-left: auto;
+}
+
 .navigation-link {
     line-height: 26px;
     text-decoration: none;
     text-align: center;
     color: inherit;
+}
+
+.main-container {
+    flex-grow: 1;
 }
 
 .main-index {
@@ -43,6 +73,11 @@ body {
     color: black;
     background-repeat: no-repeat;
     background-size: 100% auto;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .main-logo {
@@ -78,6 +113,15 @@ body {
     font-style: normal;
     font-size: 24px;
     line-height: 28px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages>div {
+    display: flex;
+    flex-direction: row;
 }
 
 .product-card-link {
@@ -102,4 +146,12 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 23.29px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 1060px;
+    justify-content: space-between;
 }
